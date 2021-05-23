@@ -1,0 +1,159 @@
+.clock1,.calculator{
+
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   border-radius: 50%;
+   transform:scale(.7);
+   transition: all 0.3s ease;
+ }
+ .clock1:hover,
+ .calculator:hover {
+   transform:scale(1);
+ 
+ }
+ 
+ 
+ 
+ .calc {
+   position: absolute;
+   left:0;
+   top:0;
+   visibility: hidden;
+   &__wrapper {
+ 
+     background: black;
+     border-radius: 10px;
+     height: auto;
+     margin: 100px auto;
+     padding: 15px;
+     position: relative;
+     width: 250px;
+     z-index: 11;
+   }
+ 
+   &__input {
+ 
+     display: flex;
+     justify-content: flex-end;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+     padding: 15px 15px;
+     font-size: 24px;
+     border-radius: 6px;
+     background: yellow;
+     width: 100%;
+     height: 55px;
+   }
+ 
+   &__buttons-box {
+ 
+     display: flex;
+     flex-wrap: wrap;
+     padding: 5px;
+     justify-content: space-between;
+     cursor: pointer;
+ 
+ 
+ 
+   }
+ 
+   &__button {
+ 
+     color: white;
+     text-align: center;
+     font-size: 20px;
+     line-height: 40px;
+     width: 20%;
+     margin: 4px;
+     height: 40px;
+     border-radius: 50px;
+     border:1px solid yellow;
+     transition: all 0.1s ease;
+ 
+     &:hover {
+ 
+       background:green;
+     }
+ 
+     @media (max-width:767px){
+       cursor:none;
+     }
+ 
+ 
+ 
+     &:active {
+ 
+       transform: scale(0.9);
+     }
+ 
+   }
+ 
+   &__clear-box {
+     display: flex;
+     width: 100%;
+ 
+   }
+ 
+   &__button-clear {
+ 
+     margin-top:10px !important;
+     box-sizing: border-box;
+     width:50%;
+ 
+     text-align: center;
+     line-height: 40px;
+     background:rgb(56, 54, 54);
+     color: white;
+     border-radius: 6px;
+     transition: all .3s ease;
+     font-size: 20px;
+     margin-left: 10px;
+     letter-spacing: 3px;
+ 
+     &:hover {
+ 
+       background-color: rgb(255, 6, 6);
+     }
+ 
+   }
+ 
+ 
+ 
+   &__button-del {
+     border-radius: 6px;
+     color: rgb(51, 209, 12);
+     width: 50%;
+     background-color: rgb(255, 255, 255);
+     margin-top: 10px!important;
+     text-align: center;
+     line-height: 40px;
+     font-size: 20px;
+     transition: color .3s ease;
+ 
+     &:hover{
+       color:red;
+     }
+   }
+ 
+   &__button:nth-child(15) {
+ 
+     background: green;
+   }
+ 
+   &__button:nth-child(4),
+   &__button:nth-child(8),
+   &__button:nth-child(16),
+   &__button:nth-child(12) {
+ 
+     color:green;
+ 
+     &:hover {
+ 
+       color: white;
+     }
+ 
+   }
+ 
+ }
+ 

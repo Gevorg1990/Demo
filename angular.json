@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ProjectCalck"
+    }
+  },
+  "defaultProject": "ProjectCalck",
+  "cli": {
+    "analytics": "a9a49075-6a70-4fd0-842c-64774a7103d6"
+  }
 }
